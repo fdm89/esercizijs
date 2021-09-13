@@ -1,5 +1,11 @@
 function calculateAverageAge(persons) {
-  // ...
+ 
+  let media = 0;
+ 
+  for (person of persons) {
+    media += person.age;
+  }
+  return Math.round(media / persons.length);
 }
 
 const persons = [
